@@ -2,7 +2,11 @@
 
 ## Delivery Method 🚚
 
-Candidates should create a **fork** from the following repository: https://github.com/resortpass/mobile-interview-test. You'll then open **two stacked pull requests (PRs)** from your fork. The first PR will contain the initial **scaffolding** of the Flutter project, and the second will include the actual **implementation** of the test. This approach helps us focus the review on the important files and changes, given that a Flutter project has many files.
+Candidates should create a fork from the following repository: https://github.com/resortpass/mobile-interview-test. You'll then open one single pull request (PR) from your fork containing all the changes, including the initial project scaffolding and the implementation of the test.
+
+Candidates have 5 days from the day they receive the test to deliver it.
+
+Candidates should also write a README file on their fork with a brief explanation of how their architecture works and any other important aspects of the project.
 
 Candidates have **5 days** from the day they receive the test to deliver it.
 
