@@ -71,6 +71,31 @@ The API to be used for this screen is a `GET` request to:
 
 `https://staging-app.resortpass.com/api/search/places/autocomplete?terms={terms}&limit=10&offset=0`
 
+Sample response:
+```json
+[
+    {
+        "id": 236,
+        "name": "Newport Beach, California",
+        "type": "city",
+        "detailed_type": "city",
+        "url": "/hotel-day-passes/Newport-Beach-236",
+        "parent_id": 4,
+        "parent_type": "state",
+        "state_code": "CA",
+        "country_code": "US",
+        "city_name": "Newport Beach",
+        "latitude": 33.6189,
+        "longitude": -117.9298,
+        "distance_search_only": false,
+        "indexName": "staging_locations",
+        "objectID": "Newport Beach, California",
+        "queryID": "6bfbd2b0055720ff3a0a13d6a96775bc"
+    },
+    ...
+]
+```
+
 #### Screen 2: Hotel Listings
 
 This screen will display a list of hotels based on the place selected from the autocomplete search results on Screen 1.
@@ -101,6 +126,131 @@ The body of the request must be a JSON object in the following format:
     },
     "limit": 30,
     "offset": 0
+}
+```
+
+Sample response:
+```json
+{
+    "stage": 1,
+    "total": 164,
+    "pages": 6,
+    "page": 0,
+    "hits_per_page": 30,
+    "offset": 0,
+    "limit": 30,
+    "queryID": "61273775fca35824ba5f7be382029afc",
+    "indexName": "staging_hotels_v3",
+    "currency": {
+        "id": 7,
+        "symbol": "$",
+        "name": "United States Dollar",
+        "iso_code": "USD",
+        "created_at": "2022-01-10T10:52:09.456-05:00",
+        "updated_at": "2022-01-10T10:52:09.456-05:00",
+        "active": true
+    },
+    "user_from_usa": true,
+    "hot_spot_hotels": [],
+    "hotels": [
+        {
+            "active": true,
+            "adults_only": false,
+            "allow_booking": "0",
+            "amenities": [
+                {
+                    "description": "Food Service",
+                    "icon_text": "e908",
+                    "name": "food"
+                },
+                ...
+            ],
+            "availability": true,
+            "avg_rating": 0.0,
+            "cancellation_window": 840,
+            "can_be_cancelled": true,
+            "city_id": 123,
+            "city_name": "New York",
+            "city_sort_order": 1,
+            "closed_for_season": false,
+            "code": "NY",
+            "country": "United States of America",
+            "country_code": "US",
+            "created_at": "2023-07-06",
+            "desktop_img": "https://assets-staging.resortpass.dev/uploads/image/picture/35445/TWA_pool7.jpg",
+            "discounted": false,
+            "distance_text": "",
+            "distance_miles": 8.0,
+            "hotel_star": 4,
+            "hotels_count": 31,
+            "id": 1990,
+            "image": [
+                {
+                    "picture": {
+                        "url": "/uploads/image/picture/35445/TWA_pool7.jpg",
+                        "results": {
+                            "url": "https://assets-staging.resortpass.dev/uploads/image/picture/35445/results_TWA_pool7.jpg"
+                        },
+                        "details": {
+                            "url": "https://assets-staging.resortpass.dev/uploads/image/picture/35445/details_TWA_pool7.jpg"
+                        }
+                    }
+                },
+                ...
+            ],
+            "is_usa": true,
+            "latitude": 40.6457482,
+            "longitude": -73.7780172,
+            "name": "TWA Hotel",
+            "objectID": "1990:3227034",
+            "offers": [],
+            "product_categories": [
+                "Pool"
+            ],
+            "product_id": 3227034,
+            "product_images": [],
+            "product_name": "Pool Pass 9pm-10:45pm",
+            "product_type_id": 2,
+            "products": [
+                {
+                    "availability": "available",
+                    "id": 3227029,
+                    "name": "Day Pass",
+                    "price": 50.0,
+                    "product_categories": [
+                        "Pool"
+                    ],
+                    "product_type_id": 2,
+                    "product_type_name": "Day Pass",
+                    "product_type_sort_order": 1,
+                    "quantity": 30,
+                    "show_currency": false
+                }
+            ],
+            "rating": 4.1,
+            "region": [
+                "new-york-city"
+            ],
+            "reopen_date": null,
+            "reviews": 164,
+            "short_desc": "Provide discuss attention. Until however think top reduce fire. Mouth job source feel over town modern.",
+            "sort_order": 10,
+            "state": "New York",
+            "state_code": "NY",
+            "state_id": 38,
+            "timezone": "US/Eastern",
+            "url": "twa-hotel",
+            "vibes": {
+                "primary": "Trendy",
+                "secondary": null
+            },
+            "_geoloc": {
+                "lat": 40.6457482,
+                "lng": -73.7780172
+            }
+        },
+        ...
+    ]
 }
 ```
 
