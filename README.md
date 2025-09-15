@@ -49,6 +49,10 @@ The following items are not mandatory but will be considered a significant plus 
 
 The task consists of building two interconnected screens that perform API calls and display the results.
 
+All design mocks are available on the following Figma page: https://www.figma.com/design/KP2V0sftr9EIUs3VHiczSG/Mobile-Developer-Interview-Test?node-id=0-1&m=dev&t=XUND8zuCg9sn64km-1
+
+All the screens / components should be implemented as close as possible from what it is available on Figma.
+
 #### Screen 1: Autocomplete Search
 
 The primary goal of this screen is to provide a search functionality, where the application suggests a list of places as the user types a search term.
